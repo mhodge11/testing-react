@@ -22,7 +22,7 @@ const App = () => {
     dispatch(
       fetchProducts({
         search: debouncedSearch,
-      }),
+      }) as any,
     )
   }, [dispatch, debouncedSearch])
 
